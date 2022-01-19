@@ -52,8 +52,7 @@ public class Exercicio3 {
     private static List<Faturamento> montarFaturamentoDeJson() {
         List<Faturamento> faturamentos = null;
         try {
-            String json = Files.readString(Paths.get("C:\\WorkSpaces\\TesteTarget\\src\\main\\resources\\dados.json"));
-
+            String json = Files.readString(Paths.get(Exercicio3.class.getResource("dados.json").toURI()));
             ObjectMapper objMapper = new ObjectMapper();
             Faturamento[] faturamentosObj = objMapper.readValue(json, Faturamento[].class);
 
