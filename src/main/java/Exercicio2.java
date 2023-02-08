@@ -33,5 +33,7 @@ public class Exercicio2 {
         } else {
             System.out.println("O número " + n + " não faz parte de Fibonacci");
         }
+
+        sc.close();
     }
 }
